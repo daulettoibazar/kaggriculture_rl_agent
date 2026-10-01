@@ -1,0 +1,134 @@
+{
+ "bundle": "tape_v21_cha22x",
+ "built_utc": "2026-09-25T23:49:52Z",
+ "base_program": {
+  "notebook_id": "abhinav0370/cha22-agent",
+  "notebook_id_no": 135642255,
+  "url": "https://www.kaggle.com/code/abhinav0370/cha22-agent",
+  "notebook_main_sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652",
+  "policy_sha1": "a8da73093c8e6a47ba8b070179c151860745ae08",
+  "policy_md5": "e58cd76f217bf3ee2b84b9df13a32ef1",
+  "fetched_utc": "2026-09-24T20:18:34Z",
+  "licence": "Apache-2.0, shipped inline in the notebook's own main.py (also reproduced as LICENSE.txt); the notebook states no other licence and Kaggle's public-notebook default is also Apache-2.0",
+  "credits": [
+   "thomastschinkel",
+   "yhay81",
+   "destbreso",
+   "aurax7",
+   "tetsutani",
+   "prvsiyan",
+   "Dmitrii Gluzdov",
+   "Ahmed Berat Ozer"
+  ]
+ },
+ "modification": {
+  "file": "policy.py",
+  "change": "none: the notebook's main.py verbatim"
+ },
+ "our_layer": {
+  "wrapper": "submission/wrap_main.py",
+  "override_steps": [],
+  "override_rules": 0,
+  "identifier": false,
+  "overlay": {
+   "source": "tools/hedge/overlay_knobs.py",
+   "config": {
+    "set": {
+     "_MP_H": 24,
+     "_ADV_LOOK": 6
+    }
+   }
+  }
+ },
+ "members": {
+  "main.py": {
+   "bytes": 16885,
+   "sha1": "438376f7c7f326b9d540b1b6cabcb41908c1ecb9",
+   "from": "submission/wrap_main.py"
+  },
+  "policy.py": {
+   "bytes": 501543,
+   "sha1": "a8da73093c8e6a47ba8b070179c151860745ae08",
+   "from": "data/public_kernels/abhinav0370_cha22-agent/extracted/main.py"
+  },
+  "LICENSE.txt": {
+   "bytes": 11358,
+   "sha1": "2b8b815229aa8a61e483fb4ba0588b8b6c491890",
+   "from": "dist/tape_v14/LICENSE.txt"
+  },
+  "overlay.py": {
+   "bytes": 2622,
+   "sha1": "a658f3f51fb20c5f210b1307f2dbf23777cb3145",
+   "from": "tools/hedge/overlay_knobs.py"
+  },
+  "overlay.json": {
+   "bytes": 39,
+   "sha1": "61c16f2018054475d1e2f92dc3d8508301c2738e",
+   "from": "research/hedge/overlay_tape_v21_cha22x.json"
+  },
+  "overrides.json": {
+   "bytes": 19,
+   "sha1": "c53fd315076fda9900469da4343a6ec822876699",
+   "from": "(empty)"
+  },
+  "NOTICE.txt": {
+   "bytes": 1382,
+   "sha1": "30f7c371097f2a04e194fec7753aef6a7e28bee6",
+   "from": "(generated)"
+  }
+ },
+ "tarball": {
+  "path": "dist/tape_v21_cha22x.tar.gz",
+  "bytes": 190376,
+  "sha1": "1c26034680cc8280b72346150bcf72492613b6fa",
+  "members": [
+   "LICENSE.txt",
+   "NOTICE.txt",
+   "main.py",
+   "manifest.json",
+   "overlay.json",
+   "overlay.py",
+   "overrides.json",
+   "policy.py"
+  ]
+ },
+ "verification": {
+  "extracted_to": "/tmp/tape_v21_cha22x_verify_p9gm8ytx",
+  "members": [
+   "LICENSE.txt",
+   "NOTICE.txt",
+   "main.py",
+   "manifest.json",
+   "overlay.json",
+   "overlay.py",
+   "overrides.json",
+   "policy.py"
+  ],
+  "vs_pass": {
+   "n": 12,
+   "w": 12,
+   "d": 0,
+   "l": 0,
+   "mean_our_money": 163474.0,
+   "fallbacks": 0
+  },
+  "abo_v54": {
+   "n": 12,
+   "w": 12,
+   "d": 0,
+   "l": 0,
+   "mean_our_money": 95979.0,
+   "fallbacks": 0
+  },
+  "cha22": {
+   "n": 12,
+   "w": 12,
+   "d": 0,
+   "l": 0,
+   "mean_our_money": 95553.0,
+   "fallbacks": 0
+  },
+  "max_turn_s": 0.356,
+  "verified": true
+ }
+}

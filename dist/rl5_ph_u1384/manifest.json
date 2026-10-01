@@ -1,0 +1,66 @@
+{
+  "line": "fs1",
+  "checkpoint": "runs/ckpt_rl5_ph_u1384.pt",
+  "checkpoint_sha256": "a2c0bab93263deec455fab1aa792bd3a24780825f22d611aadf01b3dae650611",
+  "update": 1384,
+  "model_cfg": {
+    "d_model": 384,
+    "n_layers": 10,
+    "n_heads": 8,
+    "mlp_ratio": 4,
+    "d_target": 64,
+    "hist_k": 4,
+    "market_noop_bias": 8.0,
+    "market_sell_noop_bias": 4.0,
+    "centralised_critic": true,
+    "n_styles": 0,
+    "n_extra_in": 0,
+    "residual": false,
+    "override_bias": -8.0,
+    "open_gates": "all"
+  },
+  "n_params": 18539048,
+  "git": "4ec9e45",
+  "exported_at": "2026-09-30T01:38:01Z",
+  "kaggri_so": [
+    "kaggri.abi3.so"
+  ],
+  "members": {
+    "main.py": {
+      "sha256": "01c425e2a4e475c95c4b65e6fa04af98e0b16ae4b8a1c2e5147e5e59083c9419",
+      "bytes": 5671
+    },
+    "fs1_numpy_policy.py": {
+      "sha256": "b0debcb28ebb7a440071f45e02100706e0be87b72ede4e9eeb9c448850618c0f",
+      "bytes": 9828
+    },
+    "fs1_policy.npz": {
+      "sha256": "5d69a3b4f37708c216d3b753daf729b246f609696dd9b4777de7f4d469732611",
+      "bytes": 36521766
+    },
+    "fs1_bundle.json": {
+      "sha256": "e315e528cd366d8a01d0b5874617e028b29852a4da00bed5316aca51c5f1feb8",
+      "bytes": 42
+    },
+    "LICENSE.txt": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    "NOTICE.txt": {
+      "sha256": "6b16025d75f883a46fff7b67f42d276fbc62ea68ee0d509d1484a2fc5f890719",
+      "bytes": 537
+    },
+    "kaggri/__init__.py": {
+      "sha256": "4c1d54c6166cd5bd8b6194e9927dcdfee497c8060e84a8ec4d8a3cecfd7af071",
+      "bytes": 107
+    },
+    "kaggri/kaggri.abi3.so": {
+      "sha256": "3c0ee212d0fb19962073f2396befc1608139d97be78f64135672118953bdc42e",
+      "bytes": 1144656
+    }
+  },
+  "play": {
+    "temperature": 0.5,
+    "relax_masks": true
+  }
+}

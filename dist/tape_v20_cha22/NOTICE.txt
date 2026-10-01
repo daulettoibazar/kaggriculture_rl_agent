@@ -1,0 +1,20 @@
+tape_v20_cha22 third-party notice
+===================================
+
+This agent runs the agent code of the public Kaggle notebook
+
+    abhinav0370/cha22-agent
+    https://www.kaggle.com/code/abhinav0370/cha22-agent
+
+vendored here as `policy.py`.  The notebook ships the Apache License 2.0 in its own
+payload and states no other licence; Kaggle's public-notebook default is also Apache 2.0.  The
+licence text is reproduced here as LICENSE.txt and remains inline in `policy.py` as the notebook
+shipped it.  The notebook credits thomastschinkel, yhay81, destbreso, aurax7, tetsutani, prvsiyan, Dmitrii Gluzdov, Ahmed Berat Ozer for the upstream routing and action data, likewise
+Apache 2.0.
+
+`main.py` is our wrapper (`submission/wrap_main.py`): it loads `policy.py` once, calls its entry
+point once per turn and never resets its per-seat state, and applies a table of deterministic
+market-row overrides from `overrides.json` to the turn the policy emitted.  The entry point is
+the one Kaggle itself would run, the last callable in `policy.py`'s namespace, so the wrapped
+bundle plays exactly what the notebook plays.  Everything the base policy returns that no
+override names is passed through untouched.

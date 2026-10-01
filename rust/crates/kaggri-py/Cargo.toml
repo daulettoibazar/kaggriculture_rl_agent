@@ -1,0 +1,14 @@
+[package]
+name = "kaggri-py"
+edition.workspace = true
+version.workspace = true
+
+[lib]
+name = "kaggri"
+crate-type = ["cdylib"]
+
+[dependencies]
+kaggri-core = { path = "../kaggri-core" }
+pyo3 = { version = "0.27", features = ["extension-module", "abi3-py311"] }
+numpy = "0.27"
+rayon = "1"

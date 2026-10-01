@@ -1,0 +1,19 @@
+[workspace]
+members = ["crates/kaggri-core", "crates/kaggri-py"]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+# Deliberately NOT `panic = "abort"`. kaggri-py is a CPython extension module: with
+# abort, any Rust panic (a bad index in an adversarial action, a debug assertion, a
+# future bug in sim.rs) would kill the whole interpreter instead of surfacing as a
+# Python exception. The parity harness catches exceptions per episode and reports the
+# diverging step; an aborted process just looks like the harness broke. Unwinding costs
+# nothing measurable here (a step is branchy integer work, not a tight numeric loop).
+panic = "unwind"

@@ -1,0 +1,16 @@
+# local data and runs (symlinks or directories; see README "Data layout")
+/data
+/runs
+/wandb/
+.env
+# python / rust build output
+__pycache__/
+*.pyc
+.pytest_cache/
+/rust/target/
+# third-party opponent agents are not vendored (see README): download them locally
+/dist/tape_v21_cha22x/policy.py
+/dist/tape_v20_cha22/policy.py
+# model weights and tarballs are GitHub release assets, not git blobs
+/dist/*/fs1_policy.npz
+/dist/*.tar.gz

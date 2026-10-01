@@ -1,0 +1,103 @@
+{
+ "bundle": "tape_v20_cha22",
+ "built_utc": "2026-09-25T07:26:50Z",
+ "base_program": {
+  "notebook_id": "abhinav0370/cha22-agent",
+  "notebook_id_no": 135642255,
+  "url": "https://www.kaggle.com/code/abhinav0370/cha22-agent",
+  "notebook_main_sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652",
+  "policy_sha1": "a8da73093c8e6a47ba8b070179c151860745ae08",
+  "policy_md5": "e58cd76f217bf3ee2b84b9df13a32ef1",
+  "fetched_utc": "2026-09-24T20:18:34Z",
+  "licence": "Apache-2.0, shipped inline in the notebook's own main.py (also reproduced as LICENSE.txt); the notebook states no other licence and Kaggle's public-notebook default is also Apache-2.0",
+  "credits": [
+   "thomastschinkel",
+   "yhay81",
+   "destbreso",
+   "aurax7",
+   "tetsutani",
+   "prvsiyan",
+   "Dmitrii Gluzdov",
+   "Ahmed Berat Ozer"
+  ]
+ },
+ "modification": {
+  "file": "policy.py",
+  "change": "none: the notebook's main.py verbatim"
+ },
+ "our_layer": {
+  "wrapper": "submission/wrap_main.py",
+  "override_steps": [],
+  "override_rules": 0,
+  "identifier": false
+ },
+ "members": {
+  "main.py": {
+   "bytes": 16563,
+   "sha1": "b113623d9464bf26693c7f313e2b5a69ae5e7b6c",
+   "from": "submission/wrap_main.py"
+  },
+  "policy.py": {
+   "bytes": 501543,
+   "sha1": "a8da73093c8e6a47ba8b070179c151860745ae08",
+   "from": "data/public_kernels/abhinav0370_cha22-agent/extracted/main.py"
+  },
+  "LICENSE.txt": {
+   "bytes": 11358,
+   "sha1": "2b8b815229aa8a61e483fb4ba0588b8b6c491890",
+   "from": "dist/tape_v14/LICENSE.txt"
+  },
+  "overrides.json": {
+   "bytes": 19,
+   "sha1": "c53fd315076fda9900469da4343a6ec822876699",
+   "from": "(empty)"
+  },
+  "NOTICE.txt": {
+   "bytes": 1205,
+   "sha1": "745418612ba3d9dc91bfb7b788a77cf70bb788b9",
+   "from": "(generated)"
+  }
+ },
+ "tarball": {
+  "path": "dist/tape_v20_cha22.tar.gz",
+  "bytes": 189218,
+  "sha1": "44359eedd1e34c76d4fb131bd3135cc4f1fd41b9",
+  "members": [
+   "LICENSE.txt",
+   "NOTICE.txt",
+   "main.py",
+   "manifest.json",
+   "overrides.json",
+   "policy.py"
+  ]
+ },
+ "verification": {
+  "extracted_to": "/tmp/tape_v20_cha22_verify_7vs4n9g2",
+  "members": [
+   "LICENSE.txt",
+   "NOTICE.txt",
+   "main.py",
+   "manifest.json",
+   "overrides.json",
+   "policy.py"
+  ],
+  "vs_pass": {
+   "n": 8,
+   "w": 8,
+   "d": 0,
+   "l": 0,
+   "mean_our_money": 164399.0,
+   "fallbacks": 0
+  },
+  "abo_v54": {
+   "n": 8,
+   "w": 8,
+   "d": 0,
+   "l": 0,
+   "mean_our_money": 98998.0,
+   "fallbacks": 0
+  },
+  "max_turn_s": 0.3502,
+  "verified": true
+ }
+}

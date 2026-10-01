@@ -1,0 +1,10 @@
+[package]
+name = "kaggri-core"
+edition.workspace = true
+version.workspace = true
+
+[dependencies]
+indexmap = "2"
+rayon = "1"
+
+[dev-dependencies]

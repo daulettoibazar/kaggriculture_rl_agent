@@ -1,0 +1,6 @@
+This bundle contains a neural policy trained by the submitting team (rl_last line, 2026-09).
+Its training used, as opponents and as imitation data, public Kaggle notebooks for the
+Kaggriculture competition (Apache-2.0; notably abhinav0370/cha22-agent and the notebooks it
+credits: thomastschinkel, yhay81, destbreso, aurax7, tetsutani, prvsiyan, Dmitrii Gluzdov,
+Ahmed Berat Ozer) and public leaderboard episode replays. No third-party code is included:
+main.py, fs1_numpy_policy.py and the kaggri simulator bindings are the team's own.
